@@ -1,0 +1,58 @@
+:root{
+    --color: rgb(255, 52, 16);
+    --background-color: rgb(219, 221, 67);
+}
+
+/* nagłówek */
+h1{
+    padding: 8px;
+    color: var(--color);
+}
+
+/* informacje pomocnicze */
+h2{
+    color: var(--color);
+}
+
+/* guziki do zwiększania lub zmniejszania prędkości */
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+
+}
+
+button:hover{
+    background-color: rgb(67, 67, 214);
+
+}
+
+/* główny kontener z informacjami */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background-color);
+    border-radius: 10px;
+}
+
+/* kontener z prędkością oraz ilością obrotów */
+#class-information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* kontener na zdjęcie taco */
+.taco-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#taco{
+    width: 50vw;
+    cursor: pointer;
+}
