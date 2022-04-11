@@ -1,0 +1,52 @@
+:root{
+    --color: rgb(69, 23, 82);
+    --background-color: rgb(186, 139, 168);
+}
+
+/*naglowek*/
+h1{
+    padding: 20px;
+    color: var(--color);
+}
+
+/*info pomocnicze*/
+h2{
+    color: var(--color);
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+button:hover{
+    background-color: rgb(36, 36, 142);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background-color);
+    border-radius: 10px;
+}
+
+#class-information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.taco-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#taco{
+    width: 50vw;
+    cursor: pointer;
+}
