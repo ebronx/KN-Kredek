@@ -43,22 +43,8 @@ ol{
     text-align:center;
 }
 
-/* zegar */
-#kafelZegara{
-    text-align: center;
-    margin: 0;
-    background-color: var(--background-color);
-}
-
-/* klasa tekstow */
-.tekstMain{
-    text-align: justify;
-    text-align: center;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
 /* naglowek h2 */
 h2{
-    font-family: 'Libre Bodoni', serif;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
 }
