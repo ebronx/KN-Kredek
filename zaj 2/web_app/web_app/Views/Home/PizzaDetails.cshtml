@@ -1,0 +1,18 @@
+﻿@model web_app.Models.Pizza
+
+
+@{
+    ViewData["Title"] = "Szczegoly";
+}
+
+<h1>Szczegoly Pizzy</h1>
+
+<h4>@Model.Name</h4>
+<h4>Numer: @Model.Id</h4>
+<img class="rounded" src="~/images/@Model.Image" style="height:20rem; width:35rem" />
+<h5 class="my-2">Cena:@Model.Price zł </h5>
+
+<input type="button" class="btn btn-primary" value="Zamow!" onclick="location.href='@Url.Action("CreateOrder", "Home", new { id = Model.Id })'"/>
+
+<hr />
+<a asp-action="AllPizzas">powrot</a>

@@ -1,0 +1,50 @@
+﻿@model IEnumerable<web_app.Models.Pizza>
+
+
+@{
+    ViewData["Title"] = "Pizze";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Numer
+            </th>
+            <th>
+                Nazwa
+            </th>
+            <th>
+                Cena
+            </th>
+            <th>
+                Zdjęcie
+            </th>
+            <th>
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Price)
+                        </td>
+                        <td>
+                            <img class="rounded" src="~/images/@item.Image" style="height:9rem; width:15rem"/>
+                        </td>
+                        <td>
+                            @Html.ActionLink("Szczegoly", "PizzaDetails", new { id = item.Id })
+                        </td>
+                    </tr>
+                }
+    </tbody>
+</table>

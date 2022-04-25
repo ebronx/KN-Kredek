@@ -1,0 +1,57 @@
+﻿@model web_app.Models.Order
+
+@{
+    ViewData["Title"] = "Twoje zamowienie";
+}
+
+<h1>Twoje zamowienie</h1>
+<hr/>
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayName("Pizza")
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.orderPizza.Name
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayName("cena")
+        </dt>
+        <dd class="col-sm-10">
+            @ViewBag.orderPizza.Price
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayName("Miasto")
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.City)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayName("Adres")
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Adress)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayName("Nr tel")
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayName("Email")
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayName("data zamowienie")
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OrderDate)
+        </dd>
+    </dl>
+
+
+</div>
+<a asp-action="Index">powrot</a>
