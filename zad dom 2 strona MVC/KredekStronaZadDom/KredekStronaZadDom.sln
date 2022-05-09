@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KredekStronaZadDom", "KredekStronaZadDom\KredekStronaZadDom.csproj", "{1569F867-8F7D-43C1-8224-AD960F9851D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1569F867-8F7D-43C1-8224-AD960F9851D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1569F867-8F7D-43C1-8224-AD960F9851D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1569F867-8F7D-43C1-8224-AD960F9851D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1569F867-8F7D-43C1-8224-AD960F9851D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E954A34-86F1-4B5F-BF83-14FB35664E69}
+	EndGlobalSection
+EndGlobal

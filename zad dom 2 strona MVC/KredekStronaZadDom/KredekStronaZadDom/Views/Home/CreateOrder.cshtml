@@ -1,0 +1,47 @@
+﻿@model KredekStronaZadDom.Models.Order
+
+@{
+    ViewData["Title"] = "zamowienie";
+}
+
+<h1>Zapisz się!</h1>
+
+<h4>@ViewBag.kurs.Name</h4>
+<h6>Cena: @ViewBag.kurs.Price</h6>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="CreateOrder">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input asp-for="CourseId" type="hidden" var="@ViewBag.kurs.Id" />
+
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">Imie</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Surname" class="control-label">Nazwisko</label>
+                <input asp-for="Surname" class="form-control" />
+                <span asp-validation-for="Surname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label">Nr tel</label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label">Email</label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Zapisz się!" class="btn btn-primary" />
+            </div>
+
+        </form>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+﻿@model IEnumerable<KredekStronaZadDom.Models.kurs>
+
+
+@{
+    ViewData["Title"] = "kursy";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Numer
+            </th>
+            <th>
+                Nazwa
+            </th>
+            <th>
+                Cena
+            </th>
+       
+            <th>
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+               
+                <td>
+                    @Html.ActionLink("Szczegoly", "CourseDetails", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

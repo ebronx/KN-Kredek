@@ -1,0 +1,17 @@
+﻿@model KredekStronaZadDom.Models.kurs
+
+
+@{
+    ViewData["Title"] = "Szczegoly";
+}
+
+<h1>Szczegoly kursu</h1>
+
+<h4>@Model.Name</h4>
+<h4>Numer: @Model.Id</h4>
+<h5 class="my-2">Cena:@Model.Price zł </h5>
+
+<input type="button" class="btn btn-primary" value="Zapisz się!" onclick="location.href='@Url.Action("CreateOrder", "Home", new { id = Model.Id })'" />
+
+<hr />
+<a asp-action="AllCourses">powrot</a>
